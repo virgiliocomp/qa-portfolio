@@ -1,45 +1,28 @@
-# Compiled class files
-*.class
+# Maven target directory (ignora localmente, mas não impede CI)
+# Atenção: não ignore o diretório inteiro se for gerar relatório com CI
+/web-automation-bdd/target/*
+!/web-automation-bdd/target/site/
+!/web-automation-bdd/target/site/allure-maven-plugin/
 
-# Logs
-*.log
+# Surefire Reports
+/web-automation-bdd/target/surefire-reports/*
 
-# Maven target directory
-web-automation-bdd/target/
+# Allure results
+/web-automation-bdd/allure-results/*
+!/web-automation-bdd/allure-results/.gitkeep
 
-# Maven Surefire reports
-web-automation-bdd/surefire-reports/
-web-automation-bdd/target/surefire-reports/
+# Allure local build cache
+/web-automation-bdd/.allure/
 
-# IntelliJ IDEA project files
+# IDEA & VSCode
 .idea/
 *.iml
-*.iws
-out/
-
-# Eclipse project files
-.classpath
-.project
-.settings/
-
-# VS Code
 .vscode/
 
-# OS files
+# Outros
 .DS_Store
 Thumbs.db
-
-# Environment files
 .env
-
-# Allure results and reports
-allure-results/
-allure-report/
-.allure/
-
-# Temporary files
+*.log
 *.tmp
 *.swp
-
-# Test output
-web-automation-bdd/test-output/
