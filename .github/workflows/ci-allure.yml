@@ -1,8 +1,8 @@
-name: CI with Allure
+name: Web Automation CI with Allure
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   test:
