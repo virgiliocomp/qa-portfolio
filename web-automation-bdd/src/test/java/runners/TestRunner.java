@@ -17,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
                 "pretty", // Readable console output
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" // Allure report plugin
         },
-        monochrome = true // Removes ANSI colors for cleaner console output
+        monochrome = false // Removes ANSI colors for cleaner console output
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
