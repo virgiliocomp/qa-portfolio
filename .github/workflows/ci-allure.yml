@@ -27,7 +27,7 @@ jobs:
         working-directory: web-automation-bdd
 
       - name: Upload Allure Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: web-automation-bdd/target/site/allure-maven-plugin
