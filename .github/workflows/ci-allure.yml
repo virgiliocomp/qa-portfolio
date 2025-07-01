@@ -2,7 +2,7 @@ name: CI with Allure Report
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 permissions:
   contents: write
