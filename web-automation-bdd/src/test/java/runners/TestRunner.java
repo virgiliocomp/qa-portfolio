@@ -20,5 +20,5 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true // Removes ANSI colors for cleaner console output
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
-        // No additional code needed.
+
 }
